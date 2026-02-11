@@ -10,243 +10,582 @@
   <meta property="og:title" content="Best Robot Vacuums 2026: Top Picks Tested & Ranked">
   <meta property="og:description" content="10 robot vacuums, 3 months of testing, one clear winner. Here's our definitive 2026 ranking.">
   <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a5f' },
+          }
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="font-sans text-gray-900 antialiased">
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">🏠 Smart Home <span>Simplified</span></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="best-smart-home-hubs-2026.html">Hubs</a></li>
-        <li><a href="best-security-cameras-under-100.html">Cameras</a></li>
-        <li><a href="best-smart-thermostats.html">Thermostats</a></li>
-        <li><a href="smart-home-beginners-guide.html">Beginner Guide</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+<!-- Nav -->
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 text-xl font-extrabold text-gray-900 tracking-tight">
+        <span class="text-2xl">🏠</span> Smart Home <span class="text-brand-600">Simplified</span>
+      </a>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="best-smart-home-hubs-2026.html" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition">Hubs</a>
+        <a href="best-security-cameras-under-100.html" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition">Cameras</a>
+        <a href="best-smart-thermostats.html" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition">Thermostats</a>
+        <a href="best-robot-vacuums-2026.html" class="text-sm font-medium text-brand-600 font-semibold">Vacuums</a>
+        <a href="smart-home-beginners-guide.html" class="text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-full transition">Get Started</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col gap-2 pt-2">
+        <a href="best-smart-home-hubs-2026.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">Hubs</a>
+        <a href="best-security-cameras-under-100.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">Cameras</a>
+        <a href="best-smart-thermostats.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">Thermostats</a>
+        <a href="best-robot-vacuums-2026.html" class="px-3 py-2 rounded-lg text-brand-600 font-semibold">Robot Vacuums</a>
+        <a href="smart-home-beginners-guide.html" class="px-3 py-2 rounded-lg text-brand-600 font-semibold hover:bg-brand-50">Get Started</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Article Header -->
+<header class="bg-gradient-to-br from-slate-800 via-indigo-900 to-slate-900 relative overflow-hidden">
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1667225024829-5765c2a0e1c1?w=1920&q=80')] bg-cover bg-center opacity-10"></div>
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <nav class="text-sm text-indigo-300 mb-6">
+      <a href="index.html" class="hover:text-white transition">Home</a>
+      <span class="mx-2">/</span>
+      <span>Robot Vacuums</span>
     </nav>
+    <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight">Best Robot Vacuums 2026:<br>Top Picks Tested & Ranked</h1>
+    <p class="mt-4 text-indigo-200 text-lg max-w-2xl">10 robot vacuums, 3 months of testing, one clear winner. Here's our definitive ranking.</p>
+    <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-indigo-300">
+      <div class="flex items-center gap-2">
+        <img src="https://ui-avatars.com/api/?name=SHS+Team&background=4338ca&color=fff&size=32&rounded=true" alt="Author" class="w-8 h-8 rounded-full">
+        <span>By the Smart Home Simplified Team</span>
+      </div>
+      <span class="w-1 h-1 bg-indigo-400 rounded-full"></span>
+      <span>Updated February 2026</span>
+      <span class="w-1 h-1 bg-indigo-400 rounded-full"></span>
+      <span>15 min read</span>
+    </div>
   </div>
 </header>
 
-<div class="article-header">
-  <div class="breadcrumb"><a href="index.html">Home</a> / Robot Vacuums</div>
-  <h1>Best Robot Vacuums 2026: Top Picks Tested & Ranked</h1>
-  <p class="meta">Updated February 2026 · 15 min read · By the Smart Home Simplified Team</p>
+<!-- Quick Jump -->
+<div class="bg-white border-b border-gray-100 sticky top-16 z-40">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-3 overflow-x-auto text-sm">
+    <span class="text-gray-400 font-medium whitespace-nowrap">Jump to:</span>
+    <a href="#what-to-look-for" class="whitespace-nowrap text-brand-600 hover:text-brand-800 font-medium">Buying Guide</a>
+    <a href="#rankings" class="whitespace-nowrap text-brand-600 hover:text-brand-800 font-medium">Rankings</a>
+    <a href="#roborock-s9" class="whitespace-nowrap text-brand-600 hover:text-brand-800 font-medium">#1 Roborock S9</a>
+    <a href="#budget-pick" class="whitespace-nowrap text-brand-600 hover:text-brand-800 font-medium">Budget Pick</a>
+    <a href="#faq" class="whitespace-nowrap text-brand-600 hover:text-brand-800 font-medium">FAQ</a>
+  </div>
 </div>
 
-<article class="article-content">
-  <p>Robot vacuums in 2026 are shockingly capable. The best models navigate your home with LiDAR precision, mop hard floors with pressurized water, empty their own dustbins, and even wash their own mop pads. Some can identify and avoid pet waste, shoes, cables, and socks on the floor. It's a far cry from the bumbling Roombas of a decade ago.</p>
-  <p>But prices range from $200 to $1,500, and the spec sheets read like science fiction. Do you need 12,000 Pa of suction? Is auto-empty worth the premium? Will a combo vacuum-mop actually replace your regular mop, or just push dirty water around?</p>
-  <p>We tested ten robot vacuums over three months in a real home with hardwood, carpet, tile, two dogs, and a toddler. Here's what's actually worth your money.</p>
-  <p><em>Affiliate disclosure: This article contains affiliate links. We may earn a commission if you purchase through our links, at no extra cost to you.</em></p>
+<!-- Article Body -->
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="prose-custom text-gray-700 text-[17px]">
 
-  <h2>What to Look for in a Robot Vacuum in 2026</h2>
+    <p>Robot vacuums in 2026 are shockingly capable. The best models navigate your home with LiDAR precision, mop hard floors with pressurized water, empty their own dustbins, and even wash their own mop pads. Some can identify and avoid pet waste, shoes, cables, and socks on the floor.</p>
+    <p>But prices range from $200 to $1,500, and the spec sheets read like science fiction. Do you need 12,000 Pa of suction? Is auto-empty worth the premium? Will a combo vacuum-mop actually replace your regular mop?</p>
+    <p>We tested ten robot vacuums over three months in a real home with hardwood, carpet, tile, two dogs, and a toddler. Here's what's actually worth your money.</p>
 
-  <h3>Navigation Technology</h3>
-  <p>The navigation system determines how efficiently your robot cleans. There are three types:</p>
-  <ul>
-    <li><strong>LiDAR navigation</strong> uses a spinning laser sensor to create a precise map of your home. It's the most accurate and efficient, cleaning in neat rows and rarely missing spots. Found on mid-range and premium models ($400+).</li>
-    <li><strong>Camera-based navigation (vSLAM)</strong> uses an upward-facing camera to track position. Nearly as accurate as LiDAR in well-lit rooms, but struggles in the dark. Used by iRobot Roomba models.</li>
-    <li><strong>Bump-and-wander</strong> — the robot bounces off walls and furniture randomly. Only found on budget models under $200. It works eventually, but takes 2-3x longer and misses spots regularly.</li>
-  </ul>
-  <p>Our strong recommendation: get a LiDAR model. The efficiency difference is dramatic.</p>
+    <div class="my-8 p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm text-amber-800">
+      <strong>Affiliate disclosure:</strong> This article contains affiliate links. We may earn a commission if you purchase through our links, at no extra cost to you.
+    </div>
 
-  <h3>Suction Power</h3>
-  <p>Measured in Pascals (Pa), suction power determines how well the robot picks up debris from carpets. For hardwood floors, even 2,000 Pa is sufficient. For medium-pile carpet, you want at least 5,000 Pa. For thick carpet or heavy pet hair, look for 8,000+ Pa. Numbers above 10,000 Pa are largely marketing — real-world performance gains plateau around 8,000-10,000 Pa.</p>
+    <!-- What to Look For -->
+    <h2 id="what-to-look-for" class="text-2xl md:text-3xl font-extrabold text-gray-900 scroll-mt-32">What to Look for in a Robot Vacuum in 2026</h2>
 
-  <h3>Mopping Capability</h3>
-  <p>The mopping feature has gone from gimmick to genuinely useful. Modern combo robots use vibrating or rotating mop pads with pressurized water, and the best ones automatically lift the mop when transitioning to carpet. If you have a mix of hard floors and carpet, a combo vacuum-mop can legitimately replace both a traditional vacuum and a Swiffer for maintenance cleaning.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+      <div class="bg-indigo-50 rounded-xl p-6 border border-indigo-100">
+        <div class="text-2xl mb-3">🎯</div>
+        <h3 class="font-bold text-gray-900 text-lg">Navigation</h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed"><strong>LiDAR</strong> is our strong recommendation. Spinning laser creates precise maps, cleans in neat rows, rarely misses spots. Camera-based (vSLAM) is nearly as good but struggles in the dark. Bump-and-wander is only for sub-$200 models.</p>
+      </div>
+      <div class="bg-purple-50 rounded-xl p-6 border border-purple-100">
+        <div class="text-2xl mb-3">💨</div>
+        <h3 class="font-bold text-gray-900 text-lg">Suction Power</h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">Hardwood: 2,000 Pa is fine. Medium carpet: 5,000+ Pa. Thick carpet/pet hair: 8,000+ Pa. Above 10,000 Pa is largely marketing — real gains plateau around 8K–10K Pa.</p>
+      </div>
+      <div class="bg-cyan-50 rounded-xl p-6 border border-cyan-100">
+        <div class="text-2xl mb-3">🧹</div>
+        <h3 class="font-bold text-gray-900 text-lg">Mopping</h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">Modern combo robots use vibrating or rotating mops with pressurized water. The best auto-lift the mop for carpet. If you have mixed floors, a combo can replace both a vacuum and a Swiffer.</p>
+      </div>
+    </div>
 
-  <h3>Self-Maintenance Features</h3>
-  <p>The biggest quality-of-life upgrade in robot vacuums is the self-empty dock. Instead of emptying a tiny dustbin after every cleaning session, the robot returns to its dock and the dock vacuums the debris into a larger bag that lasts 30-60 days. Premium docks also refill the robot's water tank, wash and dry the mop pads, and even add cleaning solution automatically.</p>
+    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 mb-12">
+      <h3 class="font-bold text-gray-900">🤖 Self-Maintenance: The Biggest QoL Upgrade</h3>
+      <p class="mt-2 text-sm text-gray-600 leading-relaxed">Self-empty docks vacuum debris into a bag lasting 30–60 days. Premium docks also refill water, wash mop pads with hot water, dry them, and add cleaning solution automatically. You literally don't touch the robot for a month.</p>
+    </div>
 
-  <h2>Best Robot Vacuums 2026 — Full Rankings</h2>
+    <!-- Comparison Table -->
+    <h2 id="rankings" class="text-2xl md:text-3xl font-extrabold text-gray-900 scroll-mt-32">Full Rankings</h2>
 
-  <div class="table-wrap">
-    <table class="comparison-table">
-      <thead>
-        <tr><th>Robot</th><th>Price</th><th>Navigation</th><th>Suction</th><th>Mop</th><th>Self-Empty</th><th>Our Rating</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>Roborock S9 MaxV Ultra</strong></td><td>$1,400</td><td>LiDAR + Camera</td><td>10,000 Pa</td><td>Yes (vibrating)</td><td>Yes (full dock)</td><td>⭐ 9.5/10</td></tr>
-        <tr><td><strong>Ecovacs DEEBOT X5 Omni</strong></td><td>$1,200</td><td>LiDAR</td><td>12,000 Pa</td><td>Yes (rotating)</td><td>Yes (full dock)</td><td>⭐ 9.2/10</td></tr>
-        <tr><td><strong>iRobot Roomba Combo j9+</strong></td><td>$1,000</td><td>Camera (vSLAM)</td><td>N/A (strong)</td><td>Yes (retracting)</td><td>Yes (auto-empty)</td><td>⭐ 8.8/10</td></tr>
-        <tr><td><strong>Roborock Q Revo MaxV</strong></td><td>$800</td><td>LiDAR + Camera</td><td>7,000 Pa</td><td>Yes (rotating)</td><td>Yes (full dock)</td><td>⭐ 9.0/10</td></tr>
-        <tr><td><strong>Dreame L20 Ultra</strong></td><td>$900</td><td>LiDAR</td><td>7,000 Pa</td><td>Yes (rotating)</td><td>Yes (full dock)</td><td>⭐ 8.7/10</td></tr>
-        <tr><td><strong>Roborock Q5 Pro+</strong></td><td>$500</td><td>LiDAR</td><td>5,500 Pa</td><td>No</td><td>Yes (auto-empty)</td><td>⭐ 8.5/10</td></tr>
-      </tbody>
-    </table>
+    <div class="my-8 overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+      <table class="w-full text-sm">
+        <thead class="bg-slate-800 text-white">
+          <tr>
+            <th class="text-left px-4 py-3 font-semibold">Robot</th>
+            <th class="text-left px-4 py-3 font-semibold">Price</th>
+            <th class="text-left px-4 py-3 font-semibold hidden sm:table-cell">Navigation</th>
+            <th class="text-left px-4 py-3 font-semibold hidden md:table-cell">Suction</th>
+            <th class="text-center px-4 py-3 font-semibold hidden sm:table-cell">Mop</th>
+            <th class="text-center px-4 py-3 font-semibold hidden md:table-cell">Self-Empty</th>
+            <th class="text-left px-4 py-3 font-semibold">Rating</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr class="bg-amber-50/50">
+            <td class="px-4 py-3 font-bold text-gray-900">🏆 Roborock S9 MaxV Ultra</td>
+            <td class="px-4 py-3 font-semibold text-gray-900">$1,400</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-gray-600">LiDAR + Camera</td>
+            <td class="px-4 py-3 hidden md:table-cell text-gray-600">10,000 Pa</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-center">✅</td>
+            <td class="px-4 py-3 hidden md:table-cell text-center">✅</td>
+            <td class="px-4 py-3"><span class="text-amber-500 font-bold">9.5/10</span></td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-bold text-gray-900">Ecovacs DEEBOT X5 Omni</td>
+            <td class="px-4 py-3 font-semibold text-gray-900">$1,200</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-gray-600">LiDAR</td>
+            <td class="px-4 py-3 hidden md:table-cell text-gray-600">12,000 Pa</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-center">✅</td>
+            <td class="px-4 py-3 hidden md:table-cell text-center">✅</td>
+            <td class="px-4 py-3"><span class="text-amber-500 font-bold">9.2/10</span></td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-bold text-gray-900">iRobot Roomba Combo j9+</td>
+            <td class="px-4 py-3 font-semibold text-gray-900">$1,000</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-gray-600">Camera (vSLAM)</td>
+            <td class="px-4 py-3 hidden md:table-cell text-gray-600">N/A (strong)</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-center">✅</td>
+            <td class="px-4 py-3 hidden md:table-cell text-center">✅</td>
+            <td class="px-4 py-3"><span class="text-amber-500 font-bold">8.8/10</span></td>
+          </tr>
+          <tr class="bg-brand-50/50">
+            <td class="px-4 py-3 font-bold text-gray-900">⭐ Roborock Q Revo MaxV</td>
+            <td class="px-4 py-3 font-semibold text-gray-900">$800</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-gray-600">LiDAR + Camera</td>
+            <td class="px-4 py-3 hidden md:table-cell text-gray-600">7,000 Pa</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-center">✅</td>
+            <td class="px-4 py-3 hidden md:table-cell text-center">✅</td>
+            <td class="px-4 py-3"><span class="text-amber-500 font-bold">9.0/10</span></td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-bold text-gray-900">Dreame L20 Ultra</td>
+            <td class="px-4 py-3 font-semibold text-gray-900">$900</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-gray-600">LiDAR</td>
+            <td class="px-4 py-3 hidden md:table-cell text-gray-600">7,000 Pa</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-center">✅</td>
+            <td class="px-4 py-3 hidden md:table-cell text-center">✅</td>
+            <td class="px-4 py-3"><span class="text-amber-500 font-bold">8.7/10</span></td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-bold text-gray-900">Roborock Q5 Pro+</td>
+            <td class="px-4 py-3 font-semibold text-gray-900">$500</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-gray-600">LiDAR</td>
+            <td class="px-4 py-3 hidden md:table-cell text-gray-600">5,500 Pa</td>
+            <td class="px-4 py-3 hidden sm:table-cell text-center">❌</td>
+            <td class="px-4 py-3 hidden md:table-cell text-center">✅</td>
+            <td class="px-4 py-3"><span class="text-amber-500 font-bold">8.5/10</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Product 1: Roborock S9 -->
+    <div id="roborock-s9" class="scroll-mt-32"></div>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-16">1. Roborock S9 MaxV Ultra</h2>
+    <p class="text-lg text-gray-500 mb-6">Best Overall Robot Vacuum</p>
+
+    <div class="bg-white border-2 border-amber-300 rounded-2xl overflow-hidden shadow-lg relative">
+      <div class="absolute top-0 left-0 bg-amber-500 text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-br-xl">🏆 Our Pick — Best Overall</div>
+      <div class="p-6 pt-14 md:p-8 md:pt-16">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-56 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1667225024829-5765c2a0e1c1?w=500&q=80" alt="Roborock S9 MaxV Ultra" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+            <div class="mt-3 text-center">
+              <span class="text-amber-400 text-lg">★★★★★</span>
+              <span class="text-sm font-bold text-gray-900 ml-1">9.5/10</span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-gray-900">Roborock S9 MaxV Ultra</h3>
+            <div class="mt-2">
+              <span class="text-3xl font-extrabold text-gray-900">$1,400</span>
+            </div>
+            <p class="mt-4 text-gray-600 leading-relaxed">The most complete robot vacuum we've ever tested. Dual LiDAR + camera navigation maps your home with millimeter precision and identifies obstacles in real-time — cables, shoes, pet waste, small toys. In three months of daily use, it never once got stuck.</p>
+            <p class="mt-3 text-gray-600 leading-relaxed">10,000 Pa suction handles everything from fine dust on hardwood to embedded pet hair. Vibrating mop pad with 4,000 vibrations/min auto-lifts 10mm for carpet. The all-in-one dock empties dust, refills water, washes mops with hot water, and dries them. You don't touch it for 30+ days.</p>
+            <p class="mt-3 text-gray-600 leading-relaxed">Best-in-class app with multi-level mapping, no-go zones, room-specific settings. Works with Alexa, Google Assistant, and Siri Shortcuts.</p>
+
+            <!-- Pros/Cons -->
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-emerald-50 rounded-xl p-4">
+                <h4 class="font-bold text-emerald-800 text-sm uppercase tracking-wider mb-3">✓ Pros</h4>
+                <ul class="space-y-2 text-sm text-emerald-900">
+                  <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Best navigation (zero stuck incidents)</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Excellent vacuum AND mop</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Fully self-maintaining dock</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Best-in-class app</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Obstacle avoidance works</li>
+                </ul>
+              </div>
+              <div class="bg-red-50 rounded-xl p-4">
+                <h4 class="font-bold text-red-800 text-sm uppercase tracking-wider mb-3">✗ Cons</h4>
+                <ul class="space-y-2 text-sm text-red-900">
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5">✗</span> $1,400 is a lot</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5">✗</span> Dock is large — needs floor space</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5">✗</span> Won't replace deep manual mopping</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <a href="https://www.amazon.com/s?k=Roborock+S9+MaxV+Ultra&tag=sirlim06-20" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md hover:shadow-lg">
+                Check Price on Amazon →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2: Ecovacs -->
+    <h2 class="text-2xl font-extrabold text-gray-900 mt-16">2. Ecovacs DEEBOT X5 Omni</h2>
+    <p class="text-gray-500 mb-6">Best for Large Homes</p>
+
+    <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <div class="p-6 md:p-8">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-48 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80" alt="Ecovacs DEEBOT X5" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+            <div class="mt-3 text-center">
+              <span class="text-amber-400">★★★★★</span>
+              <span class="text-sm font-bold text-gray-900 ml-1">9.2/10</span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-bold text-gray-900">Ecovacs DEEBOT X5 Omni — <span class="text-brand-600">$1,200</span></h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">Highest suction (12,000 Pa), D-shaped design for better edge cleaning, and 260-minute battery — enough for 3,500 sq ft. Dual rotating mop pads spin at 180 RPM. Full self-maintaining dock. Slightly less refined navigation than the Roborock but $200 cheaper.</p>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-emerald-50 rounded-xl p-4">
+                <h4 class="font-bold text-emerald-800 text-xs uppercase tracking-wider mb-2">✓ Pros</h4>
+                <ul class="space-y-1.5 text-sm text-emerald-900">
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Highest suction power (12,000 Pa)</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> D-shape cleans edges better</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> 260-min battery life</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Full self-maintaining dock</li>
+                </ul>
+              </div>
+              <div class="bg-red-50 rounded-xl p-4">
+                <h4 class="font-bold text-red-800 text-xs uppercase tracking-wider mb-2">✗ Cons</h4>
+                <ul class="space-y-1.5 text-sm text-red-900">
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Navigation less refined</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> App needs improvement</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Dock is even larger</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://www.amazon.com/s?k=Ecovacs+DEEBOT+X5+Omni&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md">Check Price on Amazon →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3: Roomba -->
+    <h2 class="text-2xl font-extrabold text-gray-900 mt-16">3. iRobot Roomba Combo j9+</h2>
+    <p class="text-gray-500 mb-6">Most Reliable Brand</p>
+
+    <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <div class="p-6 md:p-8">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-48 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=400&q=80" alt="iRobot Roomba" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+            <div class="mt-3 text-center">
+              <span class="text-amber-400">★★★★½</span>
+              <span class="text-sm font-bold text-gray-900 ml-1">8.8/10</span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-bold text-gray-900">iRobot Roomba Combo j9+ — <span class="text-brand-600">$1,000</span></h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">Headline feature: the mop physically retracts onto the robot's top over carpet — zero risk of dampness. Strong cleaning performance, polished app, and iRobot's excellent customer support with wide parts availability. If long-term support matters, iRobot's track record is the best.</p>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-emerald-50 rounded-xl p-4">
+                <h4 class="font-bold text-emerald-800 text-xs uppercase tracking-wider mb-2">✓ Pros</h4>
+                <ul class="space-y-1.5 text-sm text-emerald-900">
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Retracting mop — best carpet protection</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Reliable brand, great support</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Clean, intuitive app</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Strong cleaning performance</li>
+                </ul>
+              </div>
+              <div class="bg-red-50 rounded-xl p-4">
+                <h4 class="font-bold text-red-800 text-xs uppercase tracking-wider mb-2">✗ Cons</h4>
+                <ul class="space-y-1.5 text-sm text-red-900">
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> $1,000 without full dock features</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Doesn't auto-wash mop pads</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Camera nav struggles in dark</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://www.amazon.com/s?k=iRobot+Roomba+Combo+j9%2B&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md">Check Price on Amazon →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4: Q Revo MaxV -->
+    <h2 class="text-2xl font-extrabold text-gray-900 mt-16">4. Roborock Q Revo MaxV</h2>
+    <p class="text-gray-500 mb-6">Best Mid-Range Pick</p>
+
+    <div class="bg-white border-2 border-brand-200 rounded-2xl overflow-hidden shadow-lg relative">
+      <div class="absolute top-0 left-0 bg-brand-600 text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-br-xl">⭐ Best Value</div>
+      <div class="p-6 pt-14 md:p-8 md:pt-16">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-48 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80" alt="Roborock Q Revo MaxV" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+            <div class="mt-3 text-center">
+              <span class="text-amber-400">★★★★★</span>
+              <span class="text-sm font-bold text-gray-900 ml-1">9.0/10</span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-bold text-gray-900">Roborock Q Revo MaxV — <span class="text-brand-600">$800</span></h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">The sweet spot. LiDAR + camera, 7,000 Pa suction, rotating dual mop pads, and a full self-maintaining dock — same feature set as the $1,400 S9 at nearly half the price. Main sacrifices: slightly lower suction and less advanced obstacle avoidance. In daily use, we rarely noticed the difference.</p>
+            <p class="mt-2 text-gray-600 leading-relaxed font-semibold">If you want 90% of the flagship experience for 57% of the price, this is the one to buy.</p>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-emerald-50 rounded-xl p-4">
+                <h4 class="font-bold text-emerald-800 text-xs uppercase tracking-wider mb-2">✓ Pros</h4>
+                <ul class="space-y-1.5 text-sm text-emerald-900">
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Flagship features, mid-range price</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> LiDAR + camera navigation</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Full self-maintaining dock</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Strong vacuum and mop</li>
+                </ul>
+              </div>
+              <div class="bg-red-50 rounded-xl p-4">
+                <h4 class="font-bold text-red-800 text-xs uppercase tracking-wider mb-2">✗ Cons</h4>
+                <ul class="space-y-1.5 text-sm text-red-900">
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Obstacle avoidance less refined</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> 7,000 Pa adequate, not exceptional</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Dock still large</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://www.amazon.com/s?k=Roborock+Q+Revo+MaxV&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md">Check Price on Amazon →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5: Dreame -->
+    <h2 class="text-2xl font-extrabold text-gray-900 mt-16">5. Dreame L20 Ultra</h2>
+    <p class="text-gray-500 mb-6">Best Mop Performance</p>
+
+    <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <div class="p-6 md:p-8">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-48 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&q=80" alt="Dreame L20 Ultra" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+            <div class="mt-3 text-center">
+              <span class="text-amber-400">★★★★½</span>
+              <span class="text-sm font-bold text-gray-900 ml-1">8.7/10</span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-bold text-gray-900">Dreame L20 Ultra — <span class="text-brand-600">$900</span></h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">Mop pads extend beyond the robot's body to reach walls and corners — unique feature. 10.5mm mop lift for carpet, hot water pad washing. Delivers the cleanest hard floors in our test. Vacuuming solid but not class-leading at 7,000 Pa. If hard floors are your priority, this is the best choice.</p>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-emerald-50 rounded-xl p-4">
+                <h4 class="font-bold text-emerald-800 text-xs uppercase tracking-wider mb-2">✓ Pros</h4>
+                <ul class="space-y-1.5 text-sm text-emerald-900">
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Best mopping — extends to edges</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Highest mop lift (10.5mm)</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Hot water mop washing</li>
+                </ul>
+              </div>
+              <div class="bg-red-50 rounded-xl p-4">
+                <h4 class="font-bold text-red-800 text-xs uppercase tracking-wider mb-2">✗ Cons</h4>
+                <ul class="space-y-1.5 text-sm text-red-900">
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Vacuuming good, not great</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> App connectivity issues</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Less brand recognition</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://www.amazon.com/s?k=Dreame+L20+Ultra&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md">Check Price on Amazon →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6: Q5 Pro+ -->
+    <div id="budget-pick" class="scroll-mt-32"></div>
+    <h2 class="text-2xl font-extrabold text-gray-900 mt-16">6. Roborock Q5 Pro+</h2>
+    <p class="text-gray-500 mb-6">Best Budget LiDAR Robot</p>
+
+    <div class="bg-white border-2 border-emerald-200 rounded-2xl overflow-hidden shadow-lg relative">
+      <div class="absolute top-0 left-0 bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-br-xl">💰 Budget Pick</div>
+      <div class="p-6 pt-14 md:p-8 md:pt-16">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-48 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=400&q=80" alt="Roborock Q5 Pro+" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+            <div class="mt-3 text-center">
+              <span class="text-amber-400">★★★★½</span>
+              <span class="text-sm font-bold text-gray-900 ml-1">8.5/10</span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-bold text-gray-900">Roborock Q5 Pro+ — <span class="text-emerald-600">$500</span></h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">Just want a great vacuum without mopping complexity? LiDAR navigation, 5,500 Pa suction, self-emptying dock. No mop, no water tank. Cleaned our carpets nearly as well as robots twice its price. The most affordable LiDAR robot with auto-emptying.</p>
+            <p class="mt-2 text-gray-600 leading-relaxed font-semibold">If mopping isn't a priority and you want set-it-and-forget-it vacuuming, this is the sweet spot.</p>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-emerald-50 rounded-xl p-4">
+                <h4 class="font-bold text-emerald-800 text-xs uppercase tracking-wider mb-2">✓ Pros</h4>
+                <ul class="space-y-1.5 text-sm text-emerald-900">
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Best value LiDAR robot</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Self-emptying dock included</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Reliable navigation</li>
+                  <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span> Simple — no mop complexity</li>
+                </ul>
+              </div>
+              <div class="bg-red-50 rounded-xl p-4">
+                <h4 class="font-bold text-red-800 text-xs uppercase tracking-wider mb-2">✗ Cons</h4>
+                <ul class="space-y-1.5 text-sm text-red-900">
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> No mopping capability</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> 5,500 Pa is entry-level for 2026</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500">✗</span> No obstacle avoidance camera</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://www.amazon.com/s?k=Roborock+Q5+Pro%2B&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md">Check Price on Amazon →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maintenance Tips -->
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-20 mb-6">Robot Vacuum Maintenance Tips</h2>
+    <div class="space-y-4 mb-12">
+      <div class="flex items-start gap-3"><span class="text-brand-600 mt-1 flex-shrink-0">🔧</span><p><strong>Clean brushes weekly.</strong> Hair wraps around the main and side brushes. A quick cut-and-pull keeps performance up.</p></div>
+      <div class="flex items-start gap-3"><span class="text-brand-600 mt-1 flex-shrink-0">🔧</span><p><strong>Replace filters every 2–3 months.</strong> Clogged filters reduce suction dramatically.</p></div>
+      <div class="flex items-start gap-3"><span class="text-brand-600 mt-1 flex-shrink-0">🔧</span><p><strong>Clean sensors monthly.</strong> A microfiber cloth over the LiDAR and cliff sensors prevents navigation errors.</p></div>
+      <div class="flex items-start gap-3"><span class="text-brand-600 mt-1 flex-shrink-0">🔧</span><p><strong>Check the wheels.</strong> Hair and debris wrap around axles, causing drag.</p></div>
+      <div class="flex items-start gap-3"><span class="text-brand-600 mt-1 flex-shrink-0">🔧</span><p><strong>Empty the dock bag monthly.</strong> A full bag causes suction loss and overheating.</p></div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 id="faq" class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-16 mb-8 scroll-mt-32">Frequently Asked Questions</h2>
+
+    <div class="space-y-6 mb-16">
+      <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden" open>
+        <summary class="cursor-pointer px-6 py-4 font-semibold text-gray-900 flex items-center justify-between hover:bg-gray-100 transition">
+          Can a robot vacuum replace my regular vacuum?
+          <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">For daily maintenance, yes. For deep cleaning (stairs, upholstery, high corners), you'll still want a handheld or stick vacuum. Most households use their manual vacuum 80% less after getting a good robot.</div>
+      </details>
+      <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+        <summary class="cursor-pointer px-6 py-4 font-semibold text-gray-900 flex items-center justify-between hover:bg-gray-100 transition">
+          Are robot vacuums safe for pets?
+          <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Yes. Modern robots coexist with pets fine. Models with camera-based obstacle avoidance (like the Roborock S9 MaxV) identify and avoid pet waste — critical for pet owners.</div>
+      </details>
+      <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+        <summary class="cursor-pointer px-6 py-4 font-semibold text-gray-900 flex items-center justify-between hover:bg-gray-100 transition">
+          How loud are robot vacuums?
+          <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Most produce 55–70 dB at standard suction — roughly the volume of a conversation. Turbo modes are louder (70–75 dB). Schedule cleaning while you're out if noise bothers you.</div>
+      </details>
+    </div>
+
+    <!-- Final Verdict -->
+    <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 md:p-10 text-white mb-12">
+      <h2 class="text-2xl font-extrabold">Final Verdict</h2>
+      <p class="mt-4 text-slate-300 leading-relaxed">The <strong class="text-white">Roborock S9 MaxV Ultra</strong> is the best robot vacuum you can buy in 2026. If $1,400 stings, the <strong class="text-white">Roborock Q Revo MaxV</strong> at $800 delivers 90% of the experience. On a tighter budget, the <strong class="text-white">Q5 Pro+</strong> at $500 is the best value LiDAR robot with self-emptying.</p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <a href="best-smart-home-hubs-2026.html" class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-bold rounded-full hover:bg-gray-100 transition">Best Smart Home Hubs →</a>
+        <a href="best-smart-home-deals.html" class="inline-flex items-center justify-center px-6 py-3 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition">Browse Latest Deals</a>
+        <a href="smart-home-beginners-guide.html" class="inline-flex items-center justify-center px-6 py-3 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition">Beginner's Guide</a>
+      </div>
+    </div>
+
   </div>
+</main>
 
-  <h3>1. Roborock S9 MaxV Ultra — Best Overall Robot Vacuum</h3>
-  <div class="product-box pick">
-    <h4>🏆 Our Pick: Roborock S9 MaxV Ultra</h4>
-    <div class="price">$1,400</div>
-    <p>The Roborock S9 MaxV Ultra is the most complete robot vacuum we've ever tested. Its dual LiDAR + camera navigation system maps your home with millimeter precision and identifies obstacles in real-time — including cables, shoes, pet waste, and small toys. In three months of daily use, it never once got stuck.</p>
-    <p>Cleaning performance is exceptional. 10,000 Pa of suction handles everything from fine dust on hardwood to embedded pet hair in medium-pile carpet. The vibrating mop pad applies consistent pressure with 4,000 vibrations per minute, and it automatically lifts 10mm when transitioning to carpet. Our hard floors were noticeably cleaner than with our manual Swiffer routine.</p>
-    <p>The all-in-one dock is where the magic happens. After each cleaning session, the robot empties its dustbin, refills its water tank, washes the mop pads with hot water, then dries them with hot air. You literally don't touch the robot for 30+ days — just empty the dock's dust bag monthly and refill the clean water tank weekly.</p>
-    <p>The Roborock app is the best in the category, with multi-level mapping, no-go zones, room-specific suction settings, and scheduling. Smart home integration includes Alexa, Google Assistant, and Siri Shortcuts. At $1,400, it's expensive — but it's replacing both a vacuum and a mop and saving you hours every week.</p>
-    <div class="pros-cons">
-      <div class="pros"><strong>Pros</strong><ul><li>Best navigation we've tested (zero stuck incidents)</li><li>Excellent vacuum AND mop performance</li><li>Fully self-maintaining dock</li><li>Best-in-class app</li><li>Obstacle avoidance actually works</li></ul></div>
-      <div class="cons"><strong>Cons</strong><ul><li>$1,400 is a lot</li><li>Dock is large — needs floor space</li><li>Mop won't replace deep manual mopping</li></ul></div>
-    </div>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Our%20Pick%3A%20Roborock%20S9%20MaxV%20Ultra&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-      <a href="https://www.amazon.com/s?k=Our%20Pick%3A%20Roborock%20S9%20MaxV%20Ultra&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-affiliate="TODO">Check Price at Best Buy</a>
-    </div>
-  </div>
-
-  <h3>2. Ecovacs DEEBOT X5 Omni — Best for Large Homes</h3>
-  <div class="product-box">
-    <h4>Ecovacs DEEBOT X5 Omni</h4>
-    <div class="price">$1,200</div>
-    <p>The DEEBOT X5 Omni boasts the highest suction power in our test at 12,000 Pa, making it the strongest carpet cleaner available. Its unique D-shaped design allows it to get closer to walls and corners than round robots, reducing the "missed edge" problem. Battery life is outstanding at 260 minutes — enough to clean a 3,500 sq ft home on a single charge.</p>
-    <p>The rotating dual mop pads spin at 180 RPM, applying more scrubbing force than Roborock's vibrating pad approach. In our hard floor cleaning tests, it scored within 2% of the Roborock S9. The Omni dock handles self-emptying, mop washing, hot air drying, and auto water refilling.</p>
-    <p>Where it falls slightly behind is navigation refinement — the X5 occasionally bumped into chair legs that the Roborock smoothly avoided, and the app, while functional, isn't as intuitive. But at $200 less than the Roborock S9, it's a compelling alternative, especially for larger homes where battery life matters.</p>
-    <div class="pros-cons">
-      <div class="pros"><strong>Pros</strong><ul><li>Highest suction power (12,000 Pa)</li><li>D-shape design cleans edges better</li><li>260-minute battery life</li><li>Full-featured self-maintaining dock</li></ul></div>
-      <div class="cons"><strong>Cons</strong><ul><li>Navigation slightly less refined than Roborock</li><li>App needs improvement</li><li>Dock is even larger than Roborock's</li></ul></div>
-    </div>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Ecovacs%20DEEBOT%20X5%20Omni&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-    </div>
-  </div>
-
-  <h3>3. iRobot Roomba Combo j9+ — Most Reliable Brand</h3>
-  <div class="product-box">
-    <h4>iRobot Roomba Combo j9+</h4>
-    <div class="price">$1,000</div>
-    <p>iRobot pioneered the robot vacuum category, and the Combo j9+ shows they're still innovating. Its headline feature is the retracting mop: instead of lifting a mop pad, the j9+ physically retracts the mop arm onto the top of the robot when it hits carpet. This means zero risk of damp carpet, which is a genuine advantage over the "lift the pad 10mm" approach.</p>
-    <p>Cleaning performance is strong on both hard floors and carpet. iRobot doesn't publish Pa numbers, but in our standardized debris pickup tests, the j9+ matched the Roborock Q Revo on carpet and was comparable on hardwood. The iRobot app is polished and reliable, with smart mapping, clean zones, and clean schedules.</p>
-    <p>The j9+ also benefits from iRobot's excellent customer support and wide availability of replacement parts and accessories. If long-term support matters to you (and it should — you're spending $1,000), iRobot's track record is the best in the industry.</p>
-    <div class="pros-cons">
-      <div class="pros"><strong>Pros</strong><ul><li>Retracting mop arm — best carpet protection</li><li>Reliable brand with great support</li><li>Clean, intuitive app</li><li>Strong cleaning performance</li></ul></div>
-      <div class="cons"><strong>Cons</strong><ul><li>$1,000 without the mopping dock features</li><li>Doesn't wash mop pads automatically</li><li>Camera navigation struggles in dark rooms</li></ul></div>
-    </div>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=iRobot%20Roomba%20Combo%20j9%2B&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-    </div>
-  </div>
-
-  <h3>4. Roborock Q Revo MaxV — Best Mid-Range Pick</h3>
-  <div class="product-box">
-    <h4>Roborock Q Revo MaxV</h4>
-    <div class="price">$800</div>
-    <p>The Q Revo MaxV hits the sweet spot between price and features. It has LiDAR + camera navigation, 7,000 Pa suction, rotating dual mop pads, and a full self-maintaining dock — the same feature set as the $1,400 S9 at nearly half the price. The main sacrifices are slightly lower suction power and less advanced obstacle avoidance.</p>
-    <p>In daily use, we rarely noticed the difference. The Q Revo MaxV cleaned our mixed-floor home effectively, navigated around furniture reliably, and the dock handled all maintenance. If you want 90% of the flagship experience for 57% of the price, this is the one to buy.</p>
-    <div class="pros-cons">
-      <div class="pros"><strong>Pros</strong><ul><li>Excellent value — flagship features at mid-range price</li><li>LiDAR + camera navigation</li><li>Full self-maintaining dock</li><li>Strong vacuum and mop performance</li></ul></div>
-      <div class="cons"><strong>Cons</strong><ul><li>Obstacle avoidance less refined than S9</li><li>7,000 Pa is adequate, not exceptional</li><li>Dock still takes up significant space</li></ul></div>
-    </div>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Roborock%20Q%20Revo%20MaxV&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-    </div>
-  </div>
-
-  <h3>5. Dreame L20 Ultra — Best Mop Performance</h3>
-  <div class="product-box">
-    <h4>Dreame L20 Ultra</h4>
-    <div class="price">$900</div>
-    <p>The Dreame L20 Ultra stands out for its mopping. The dual rotating mop pads extend beyond the robot's body to reach along walls and into corners — a unique feature that no other robot matches. Combined with a mop that lifts 10.5mm for carpet transitions and a dock that washes pads with hot water, it delivers the cleanest hard floors in our test.</p>
-    <p>Vacuuming is solid but not class-leading at 7,000 Pa. Navigation is reliable LiDAR-based. The app is good but has occasional connectivity issues. If your home is primarily hard floors and mopping performance is your priority, the L20 Ultra is the best choice.</p>
-    <div class="pros-cons">
-      <div class="pros"><strong>Pros</strong><ul><li>Best mopping performance — mops extend to edges</li><li>Highest mop lift (10.5mm)</li><li>Hot water mop washing</li><li>Reliable LiDAR navigation</li></ul></div>
-      <div class="cons"><strong>Cons</strong><ul><li>Vacuuming is good, not great</li><li>App connectivity issues</li><li>Less brand recognition than Roborock/iRobot</li></ul></div>
-    </div>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Dreame%20L20%20Ultra&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-    </div>
-  </div>
-
-  <h3>6. Roborock Q5 Pro+ — Best Budget LiDAR Robot</h3>
-  <div class="product-box">
-    <h4>Roborock Q5 Pro+</h4>
-    <div class="price">$500</div>
-    <p>If you just want a great robot vacuum without the mopping complexity, the Q5 Pro+ is our budget recommendation. It has LiDAR navigation, 5,500 Pa suction, and a self-emptying dock. No mop, no water tank, no mop pad maintenance — just vacuum and forget. It cleaned our carpets nearly as well as robots twice its price, and the self-empty dock means weeks between maintenance.</p>
-    <p>At $500, it's the most affordable LiDAR robot with auto-emptying. If mopping isn't a priority and you want set-it-and-forget-it vacuuming, this is the sweet spot.</p>
-    <div class="pros-cons">
-      <div class="pros"><strong>Pros</strong><ul><li>Best value LiDAR robot</li><li>Self-emptying dock included</li><li>Reliable navigation and cleaning</li><li>Simple — no mopping complexity</li></ul></div>
-      <div class="cons"><strong>Cons</strong><ul><li>No mopping capability</li><li>5,500 Pa suction is entry-level for 2026</li><li>No obstacle avoidance camera</li></ul></div>
-    </div>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Roborock%20Q5%20Pro%2B&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-    </div>
-  </div>
-
-  <h2>Robot Vacuum Maintenance Tips</h2>
-  <ul>
-    <li><strong>Clean the brushes weekly.</strong> Hair wraps around the main brush and side brushes. A quick cut-and-pull keeps performance up.</li>
-    <li><strong>Replace filters every 2-3 months.</strong> Clogged filters reduce suction dramatically. Most robots come with spare filters.</li>
-    <li><strong>Clean sensors monthly.</strong> A microfiber cloth over the LiDAR sensor and cliff sensors prevents navigation errors.</li>
-    <li><strong>Check the wheels.</strong> Hair and debris can wrap around wheel axles, causing the robot to drag instead of roll.</li>
-    <li><strong>Empty the dock bag.</strong> Even with a self-emptying dock, check the bag monthly. A full bag causes suction loss and overheating.</li>
-  </ul>
-
-  <h2>Frequently Asked Questions</h2>
-
-  <div class="faq-item">
-    <h3>Can a robot vacuum replace my regular vacuum?</h3>
-    <p>For daily maintenance, yes. For deep cleaning (stairs, upholstery, high corners), you'll still want a handheld or stick vacuum. Most households find they use their manual vacuum 80% less after getting a good robot.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Are robot vacuums safe for pets?</h3>
-    <p>Yes. Modern robots are designed to coexist with pets. Models with camera-based obstacle avoidance (like the Roborock S9 MaxV) can identify and avoid pet waste — a critical feature for pet owners.</p>
-  </div>
-  <div class="faq-item">
-    <h3>How loud are robot vacuums?</h3>
-    <p>Most robot vacuums produce 55-70 dB at standard suction levels — roughly the volume of a normal conversation. Turbo/max modes are louder (70-75 dB). Schedule cleaning while you're out if noise bothers you.</p>
-  </div>
-
-  <h2>Final Verdict</h2>
-  <p>The <strong>Roborock S9 MaxV Ultra</strong> is the best robot vacuum you can buy in 2026. If the $1,400 price stings, the <strong>Roborock Q Revo MaxV</strong> at $800 delivers 90% of the experience. On a tighter budget, the <strong>Q5 Pro+</strong> at $500 is the best value LiDAR robot with self-emptying.</p>
-  <p>Want to integrate your robot vacuum into a full smart home? Check out our guide to the <a href="best-smart-home-hubs-2026.html">best smart home hubs</a> for centralized control, or browse our <a href="best-smart-home-deals.html">deals page</a> for the latest discounts. New to smart home tech? Our <a href="smart-home-beginners-guide.html">beginner's guide</a> is the perfect starting point.</p>
-
-  <div class="newsletter">
-    <h2>Get Our Free Smart Home Planning Checklist</h2>
-    <p>Map out your setup before you buy. 20 devices ranked by value, plus our compatibility cheat sheet.</p>
-    <form class="newsletter-form" action="#" method="POST">
-      <input type="email" placeholder="Your email address" required aria-label="Email address">
-      <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+<!-- Newsletter -->
+<section class="py-16 bg-gradient-to-br from-brand-600 to-brand-800">
+  <div class="max-w-2xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-extrabold text-white">Get Our Free Smart Home Planning Checklist</h2>
+    <p class="mt-3 text-blue-100">Map out your setup before you buy. 20 devices ranked by value, plus our compatibility cheat sheet.</p>
+    <form class="mt-6 flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" action="#" method="POST">
+      <input type="email" placeholder="you@example.com" required aria-label="Email address" class="flex-1 px-5 py-4 rounded-full text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-white/30 shadow-lg">
+      <button type="submit" class="px-8 py-4 bg-white text-brand-700 font-bold rounded-full hover:bg-gray-50 transition shadow-lg">Send Me the Checklist</button>
     </form>
   </div>
-</article>
+</section>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div>
-      <h4>🏠 Smart Home Simplified</h4>
-      <p>Honest reviews and budget guides for smart home tech.</p>
-      <div class="affiliate-disclosure"><strong>Affiliate Disclosure:</strong> Some links on this site are affiliate links. We may earn a commission at no extra cost to you.</div>
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="md:col-span-2">
+        <a href="index.html" class="text-xl font-extrabold text-white">🏠 Smart Home Simplified</a>
+        <p class="mt-4 text-sm leading-relaxed max-w-md">Honest reviews and budget guides for smart home tech. We buy every product we recommend and test it ourselves.</p>
+        <div class="mt-6 p-4 bg-slate-800 rounded-xl text-xs leading-relaxed">
+          <strong class="text-slate-300">Affiliate Disclosure:</strong> Some links on this site are affiliate links. If you buy through our links, we may earn a small commission at no extra cost to you. We never let commissions influence our recommendations.
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Guides</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="best-smart-home-hubs-2026.html" class="hover:text-white transition">Smart Home Hubs</a></li>
+          <li><a href="best-security-cameras-under-100.html" class="hover:text-white transition">Security Cameras</a></li>
+          <li><a href="best-smart-thermostats.html" class="hover:text-white transition">Smart Thermostats</a></li>
+          <li><a href="best-robot-vacuums-2026.html" class="hover:text-white transition">Robot Vacuums</a></li>
+          <li><a href="best-smart-lighting-systems.html" class="hover:text-white transition">Smart Lighting</a></li>
+          <li><a href="best-video-doorbells.html" class="hover:text-white transition">Video Doorbells</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Resources</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="smart-home-beginners-guide.html" class="hover:text-white transition">Beginner's Guide</a></li>
+          <li><a href="best-smart-home-deals.html" class="hover:text-white transition">Today's Deals</a></li>
+          <li><a href="best-smart-speakers.html" class="hover:text-white transition">Smart Speakers</a></li>
+          <li><a href="best-smart-locks.html" class="hover:text-white transition">Smart Locks</a></li>
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h4>Guides</h4>
-      <ul>
-        <li><a href="best-smart-home-hubs-2026.html">Smart Home Hubs</a></li>
-        <li><a href="best-security-cameras-under-100.html">Security Cameras</a></li>
-        <li><a href="best-smart-thermostats.html">Smart Thermostats</a></li>
-        <li><a href="best-robot-vacuums-2026.html">Robot Vacuums</a></li>
-        <li><a href="best-smart-lighting-systems.html">Smart Lighting</a></li>
-        <li><a href="best-video-doorbells.html">Video Doorbells</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="smart-home-beginners-guide.html">Beginner's Guide</a></li>
-        <li><a href="best-smart-home-deals.html">Today's Deals</a></li>
-        <li><a href="best-smart-speakers-2026.html">Smart Speakers</a></li>
-        <li><a href="best-smart-locks.html">Smart Locks</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
+    <div class="mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+      <p>&copy; 2026 Smart Home Simplified. All rights reserved.</p>
     </div>
   </div>
-  <div class="footer-bottom"><p>&copy; 2026 Smart Home Simplified. All rights reserved.</p></div>
 </footer>
+
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
 
 </body>
 </html>

@@ -10,283 +10,507 @@
   <meta property="og:title" content="Best Smart Home Devices Under $50 in 2026">
   <meta property="og:description" content="15 smart home devices that cost less than dinner for two. All tested, all recommended.">
   <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a5f' },
+          }
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="font-sans text-gray-900 antialiased">
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">🏠 Smart Home <span>Simplified</span></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="best-smart-home-hubs-2026.html">Hubs</a></li>
-        <li><a href="best-security-cameras-under-100.html">Cameras</a></li>
-        <li><a href="best-smart-thermostats.html">Thermostats</a></li>
-        <li><a href="smart-home-beginners-guide.html">Beginner Guide</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+<!-- Nav -->
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 text-xl font-extrabold text-gray-900 tracking-tight">
+        <span class="text-2xl">🏠</span> Smart Home <span class="text-brand-600">Simplified</span>
+      </a>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="best-smart-home-hubs-2026.html" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition">Hubs</a>
+        <a href="best-security-cameras-under-100.html" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition">Cameras</a>
+        <a href="best-smart-thermostats.html" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition">Thermostats</a>
+        <a href="best-robot-vacuums-2026.html" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition">Vacuums</a>
+        <a href="smart-home-beginners-guide.html" class="text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-full transition">Get Started</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col gap-2 pt-2">
+        <a href="best-smart-home-hubs-2026.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">Hubs</a>
+        <a href="best-security-cameras-under-100.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">Cameras</a>
+        <a href="best-smart-thermostats.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">Thermostats</a>
+        <a href="best-robot-vacuums-2026.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-50">Robot Vacuums</a>
+        <a href="smart-home-beginners-guide.html" class="px-3 py-2 rounded-lg text-brand-600 font-semibold hover:bg-brand-50">Get Started</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Article Header -->
+<header class="bg-gradient-to-br from-emerald-600 via-emerald-700 to-teal-800 relative overflow-hidden">
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=1920&q=80')] bg-cover bg-center opacity-10"></div>
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <nav class="text-sm text-emerald-200 mb-6">
+      <a href="index.html" class="hover:text-white transition">Home</a>
+      <span class="mx-2">/</span>
+      <span>Budget Picks</span>
     </nav>
+    <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight">Best Smart Home Devices Under $50 in 2026</h1>
+    <p class="mt-4 text-emerald-100 text-lg max-w-2xl">15 devices that cost less than dinner for two — all tested, all recommended.</p>
+    <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-emerald-200">
+      <div class="flex items-center gap-2">
+        <img src="https://ui-avatars.com/api/?name=SHS+Team&background=059669&color=fff&size=32&rounded=true" alt="Author" class="w-8 h-8 rounded-full">
+        <span>By the Smart Home Simplified Team</span>
+      </div>
+      <span class="w-1 h-1 bg-emerald-400 rounded-full"></span>
+      <span>Updated February 2026</span>
+      <span class="w-1 h-1 bg-emerald-400 rounded-full"></span>
+      <span>11 min read</span>
+    </div>
   </div>
 </header>
 
-<div class="article-header">
-  <div class="breadcrumb"><a href="index.html">Home</a> / Budget Picks</div>
-  <h1>Best Smart Home Devices Under $50 in 2026</h1>
-  <p class="meta">Updated February 2026 · 11 min read · By the Smart Home Simplified Team</p>
+<!-- Quick Jump / TOC -->
+<div class="bg-white border-b border-gray-100 sticky top-16 z-40">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-3 overflow-x-auto text-sm">
+    <span class="text-gray-400 font-medium whitespace-nowrap">Jump to:</span>
+    <a href="#top-picks" class="whitespace-nowrap text-brand-600 hover:text-brand-800 font-medium">#1–#5 Top Picks</a>
+    <a href="#more-picks" class="whitespace-nowrap text-brand-600 hover:text-brand-800 font-medium">#6–#15</a>
+    <a href="#starter-kits" class="whitespace-nowrap text-brand-600 hover:text-brand-800 font-medium">Starter Kits</a>
+    <a href="#faq" class="whitespace-nowrap text-brand-600 hover:text-brand-800 font-medium">FAQ</a>
+  </div>
 </div>
 
-<article class="article-content">
-  <p>You don't need to spend hundreds to start a smart home. Some of the most useful smart devices cost less than a tank of gas. We've tested dozens of budget smart home products and found 15 that genuinely deliver — no "cheap for a reason" junk, no devices that need a $200 hub to work, no subscriptions required. Everything on this list costs under $50, works out of the box, and is something we'd put in our own homes.</p>
-  <p><em>Affiliate disclosure: This article contains affiliate links. We may earn a commission if you purchase through our links, at no extra cost to you.</em></p>
+<!-- Article Body -->
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="prose-custom text-gray-700 text-[17px]">
+    <p>You don't need to spend hundreds to start a smart home. Some of the most useful smart devices cost less than a tank of gas. We've tested dozens of budget smart home products and found 15 that genuinely deliver — no "cheap for a reason" junk, no devices that need a $200 hub to work, no subscriptions required.</p>
+    <p>Everything on this list costs under $50, works out of the box, and is something we'd put in our own homes.</p>
 
-  <h2>The Best of the Best Under $50</h2>
-
-  <div class="product-box pick">
-    <h4>🏆 #1: Amazon Echo Pop — $30</h4>
-    <div class="price">$30 (often $18 on sale)</div>
-    <p>The Echo Pop is the single best entry point into smart home tech. For $30 (or $18 during frequent sales), you get a capable Alexa smart speaker that controls every Alexa-compatible device, plays music, answers questions, sets timers, and runs automations. The sound quality is surprisingly decent for its size — not room-filling, but perfectly fine for a bedroom, bathroom, or kitchen counter.</p>
-    <p>Why it's #1: it's the foundation everything else plugs into. Buy this first, then add devices from this list. Every smart plug, bulb, and sensor you add becomes voice-controllable through the Echo Pop.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Amazon%20Echo%20Pop&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <div class="my-8 p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm text-amber-800">
+      <strong>Affiliate disclosure:</strong> This article contains affiliate links. We may earn a commission if you purchase through our links, at no extra cost to you.
     </div>
-  </div>
 
-  <div class="product-box pick">
-    <h4>🏆 #2: TP-Link Kasa Smart Plug 4-Pack — $20</h4>
-    <div class="price">$20 ($5 per plug)</div>
-    <p>Four smart plugs for $20. Five dollars each. They work with Alexa, Google, and Apple Home (via Matter firmware update). Energy monitoring on each plug shows you exactly how much power your devices draw. Schedule your coffee maker. Voice-control a lamp. Monitor standby power on your TV. At $5 each, buy a 4-pack and find uses for them — you will.</p>
-    <p>These are our most-recommended product across the entire site. The value is absurd.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=TP-Link%20Kasa%20Smart%20Plug%204-Pack&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <!-- Top Picks -->
+    <h2 id="top-picks" class="text-2xl md:text-3xl font-extrabold text-gray-900 scroll-mt-32">The Best of the Best Under $50</h2>
+
+    <!-- Product 1 -->
+    <div class="my-10 bg-white border-2 border-emerald-200 rounded-2xl overflow-hidden shadow-lg relative">
+      <div class="absolute top-0 left-0 bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-br-xl">🏆 Our #1 Pick</div>
+      <div class="p-6 pt-12 md:p-8 md:pt-14">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-48 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?w=400&q=80" alt="Amazon Echo Pop" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl md:text-2xl font-bold text-gray-900">Amazon Echo Pop</h3>
+            <div class="mt-2 flex items-center gap-3">
+              <span class="text-2xl font-extrabold text-emerald-600">$30</span>
+              <span class="text-sm text-gray-400 line-through">often $18 on sale</span>
+              <span class="text-amber-400 text-sm">★★★★★</span>
+            </div>
+            <p class="mt-3 text-gray-600 leading-relaxed">The Echo Pop is the single best entry point into smart home tech. For $30, you get a capable Alexa smart speaker that controls every Alexa-compatible device, plays music, answers questions, sets timers, and runs automations. The sound quality is surprisingly decent for its size.</p>
+            <p class="mt-2 text-gray-600 leading-relaxed"><strong>Why it's #1:</strong> it's the foundation everything else plugs into. Buy this first, then add devices from this list. Every smart plug, bulb, and sensor you add becomes voice-controllable through the Echo Pop.</p>
+            <a href="https://www.amazon.com/s?k=Amazon+Echo+Pop&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md hover:shadow-lg">
+              Check Price on Amazon →
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="product-box">
-    <h4>#3: Wyze Bulb (4-pack) — $32</h4>
-    <div class="price">$32 ($8 per bulb)</div>
-    <p>Smart LED bulbs for $8 each. Dimmable, tunable white (warm to cool), 800 lumens (equivalent to a 60W incandescent). Wi-Fi connected — no hub needed. Works with Alexa and Google. Schedule them, group them by room, dim them from your phone or voice. For pure bang-per-buck smart lighting, nothing beats Wyze.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Wyze%20Bulb%20(4-pack)&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <!-- Product 2 -->
+    <div class="my-10 bg-white border-2 border-emerald-200 rounded-2xl overflow-hidden shadow-lg relative">
+      <div class="absolute top-0 left-0 bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-br-xl">🏆 Best Value</div>
+      <div class="p-6 pt-12 md:p-8 md:pt-14">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-48 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80" alt="TP-Link Kasa Smart Plug" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl md:text-2xl font-bold text-gray-900">TP-Link Kasa Smart Plug 4-Pack</h3>
+            <div class="mt-2 flex items-center gap-3">
+              <span class="text-2xl font-extrabold text-emerald-600">$20</span>
+              <span class="text-sm text-gray-500 bg-emerald-50 px-2 py-0.5 rounded-full font-medium">$5 per plug</span>
+              <span class="text-amber-400 text-sm">★★★★★</span>
+            </div>
+            <p class="mt-3 text-gray-600 leading-relaxed">Four smart plugs for $20. They work with Alexa, Google, and Apple Home (via Matter firmware update). Energy monitoring on each plug shows you exactly how much power your devices draw. Schedule your coffee maker. Voice-control a lamp. Monitor standby power on your TV.</p>
+            <p class="mt-2 text-gray-600 leading-relaxed"><strong>These are our most-recommended product across the entire site.</strong> The value is absurd.</p>
+            <a href="https://www.amazon.com/s?k=TP-Link+Kasa+Smart+Plug+4-Pack&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md hover:shadow-lg">
+              Check Price on Amazon →
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="product-box">
-    <h4>#4: Wyze Cam v4 — $36</h4>
-    <div class="price">$36</div>
-    <p>A 2K indoor/outdoor security camera for $36. Color night vision, motion detection zones, two-way audio, and free local storage via microSD card (no subscription for basic features). IP65 weatherproof so it works outside. The image quality at this price is honestly ridiculous — it competes with cameras three times its price.</p>
-    <p>Pair it with the Echo Pop: "Alexa, show me the front door" pulls up the live feed on an Echo Show. <a href="best-security-cameras-under-100.html">Full camera review →</a></p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Wyze%20Cam%20v4&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <!-- Products 3-5 (standard style) -->
+    <div class="my-10 bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <div class="p-6 md:p-8">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-40 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Wyze Bulb" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">#3</span>
+              <span class="text-amber-400 text-sm">★★★★½</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Wyze Bulb (4-pack)</h3>
+            <div class="mt-1 flex items-center gap-3">
+              <span class="text-xl font-extrabold text-gray-900">$32</span>
+              <span class="text-sm text-gray-500">$8 per bulb</span>
+            </div>
+            <p class="mt-3 text-gray-600 leading-relaxed">Smart LED bulbs for $8 each. Dimmable, tunable white (warm to cool), 800 lumens. Wi-Fi connected — no hub needed. Works with Alexa and Google. For pure bang-per-buck smart lighting, nothing beats Wyze.</p>
+            <a href="https://www.amazon.com/s?k=Wyze+Bulb+4-pack&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md hover:shadow-lg">
+              Check Price on Amazon →
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="product-box">
-    <h4>#5: Wyze Video Doorbell — $35</h4>
-    <div class="price">$35</div>
-    <p>A video doorbell for $35. 1080p video, two-way audio, motion alerts, and free cloud storage for 12-second clips (or unlimited local recording via microSD). Hardwired installation (uses existing doorbell wiring) means no battery to charge. The Wyze app shows you a live feed and lets you talk to visitors from anywhere.</p>
-    <p>At this price, there's no reason not to have a video doorbell. It's the cheapest model we recommend, and it genuinely works well.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Wyze%20Video%20Doorbell&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <div class="my-10 bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <div class="p-6 md:p-8">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-40 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80" alt="Wyze Cam v4" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">#4</span>
+              <span class="text-amber-400 text-sm">★★★★★</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Wyze Cam v4</h3>
+            <div class="mt-1">
+              <span class="text-xl font-extrabold text-gray-900">$36</span>
+            </div>
+            <p class="mt-3 text-gray-600 leading-relaxed">A 2K indoor/outdoor security camera for $36. Color night vision, motion detection zones, two-way audio, and free local storage via microSD card. IP65 weatherproof. The image quality at this price is honestly ridiculous — it competes with cameras three times its price. <a href="best-security-cameras-under-100.html" class="text-brand-600 hover:underline font-medium">Full camera review →</a></p>
+            <a href="https://www.amazon.com/s?k=Wyze+Cam+v4&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md hover:shadow-lg">
+              Check Price on Amazon →
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="product-box">
-    <h4>#6: Amazon Smart Thermostat — $50</h4>
-    <div class="price">$50</div>
-    <p>The cheapest smart thermostat worth buying. It's made by Amazon and Honeywell, looks clean on the wall, and integrates with Alexa for voice control and automated scheduling. Savings of 10–15% on heating/cooling bills mean this $50 device pays for itself in 3–5 months for most households. If you have Alexa and a compatible HVAC system, this is a no-brainer.</p>
-    <p>Check your utility company — many offer $50+ rebates for smart thermostats, which could make this free. <a href="best-smart-thermostats.html">Full thermostat guide →</a></p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Amazon%20Smart%20Thermostat&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <div class="my-10 bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+      <div class="p-6 md:p-8">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-40 flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=400&q=80" alt="Wyze Video Doorbell" class="w-full rounded-xl object-cover aspect-square bg-gray-100" loading="lazy">
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">#5</span>
+              <span class="text-amber-400 text-sm">★★★★½</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Wyze Video Doorbell</h3>
+            <div class="mt-1">
+              <span class="text-xl font-extrabold text-gray-900">$35</span>
+            </div>
+            <p class="mt-3 text-gray-600 leading-relaxed">A video doorbell for $35. 1080p video, two-way audio, motion alerts, and free cloud storage for 12-second clips. Hardwired installation means no battery to charge. At this price, there's no reason not to have a video doorbell.</p>
+            <a href="https://www.amazon.com/s?k=Wyze+Video+Doorbell&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-4 inline-flex items-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-full transition shadow-md hover:shadow-lg">
+              Check Price on Amazon →
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="product-box">
-    <h4>#7: Echo Show 5 (3rd Gen) — $50</h4>
-    <div class="price">$50 (frequently $40 on sale)</div>
-    <p>Everything the Echo Pop does, plus a 5.5" touchscreen. View camera feeds, see your calendar, follow video recipes, watch the weather radar, use it as a bedside alarm clock with a smart display. The screen makes it significantly more useful than a speaker-only device, especially for managing cameras and video doorbells.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Echo%20Show%205%20(3rd%20Gen)&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <!-- Divider -->
+    <div id="more-picks" class="scroll-mt-32"></div>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-16 mb-8">More Great Picks Under $50</h2>
+
+    <!-- Products 6-15 compact grid -->
+    <div class="space-y-6">
+
+      <!-- Product 6 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition flex flex-col md:flex-row gap-4">
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xs font-bold text-gray-400">#6</span>
+            <span class="text-amber-400 text-xs">★★★★★</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900">Amazon Smart Thermostat — <span class="text-emerald-600">$50</span></h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">The cheapest smart thermostat worth buying. Made by Amazon and Honeywell. Savings of 10–15% on heating/cooling bills mean this pays for itself in 3–5 months. Check your utility company — many offer $50+ rebates that make this free. <a href="best-smart-thermostats.html" class="text-brand-600 hover:underline font-medium">Full guide →</a></p>
+          <a href="https://www.amazon.com/s?k=Amazon+Smart+Thermostat&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-gray-400">#7</span>
+          <span class="text-amber-400 text-xs">★★★★½</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900">Echo Show 5 (3rd Gen) — <span class="text-emerald-600">$50</span></h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">Everything the Echo Pop does, plus a 5.5" touchscreen. View camera feeds, see your calendar, follow video recipes, watch the weather radar, use it as a bedside alarm clock. Frequently $40 on sale.</p>
+        <a href="https://www.amazon.com/s?k=Echo+Show+5+3rd+Gen&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-gray-400">#8</span>
+          <span class="text-amber-400 text-xs">★★★★½</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900">Google Nest Mini (2nd Gen) — <span class="text-emerald-600">$30</span></h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">The Google ecosystem equivalent of the Echo Pop. If you're an Android user or prefer Google Assistant, this is your starting point. Wall-mountable design, full Google Home integration. Works with all Matter devices.</p>
+        <a href="https://www.amazon.com/s?k=Google+Nest+Mini+2nd+Gen&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-gray-400">#9</span>
+          <span class="text-amber-400 text-xs">★★★★</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900">IKEA TRÅDFRI Smart Bulb (3-pack) — <span class="text-emerald-600">$27</span></h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">Zigbee smart bulbs that work with DIRIGERA hub, SmartThings, and any Zigbee hub. Supports Matter via DIRIGERA. Better build quality than Wyze and don't clog your Wi-Fi (Zigbee). $9 per bulb.</p>
+        <a href="https://www.amazon.com/s?k=IKEA+TRADFRI+Smart+Bulb+3-pack&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-gray-400">#10</span>
+          <span class="text-amber-400 text-xs">★★★★½</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900">SwitchBot Motion Sensor — <span class="text-emerald-600">$20</span></h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">Battery-powered motion sensor that triggers automations in SwitchBot, Alexa, or Google. Mount in hallways, bathrooms, or closets. Battery lasts 3+ years. A gateway to truly smart automation.</p>
+        <a href="https://www.amazon.com/s?k=SwitchBot+Motion+Sensor&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-gray-400">#11</span>
+          <span class="text-amber-400 text-xs">★★★★</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900">Govee Smart LED Light Strip (16ft) — <span class="text-emerald-600">$15</span></h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">16 feet of color-changing LED strip lights. Stick them behind your TV, under cabinets, or around your desk. Wi-Fi controlled, 16 million colors, music sync mode. Pure fun for very little money.</p>
+        <a href="https://www.amazon.com/s?k=Govee+Smart+LED+Light+Strip+16ft&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-gray-400">#12</span>
+          <span class="text-amber-400 text-xs">★★★★½</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900">YoLink Water Leak Sensor — <span class="text-emerald-600">$15</span></h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">Water damage is the most expensive home disaster that's also the most preventable. This sensor alerts your phone instantly when it detects moisture. Uses LoRa for long range — works in basements where Wi-Fi can't reach. Battery: 2–4 years. <em>(Requires YoLink Hub, $20)</em></p>
+        <a href="https://www.amazon.com/s?k=YoLink+Water+Leak+Sensor&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+      </div>
+
+      <!-- Product 13 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-gray-400">#13</span>
+          <span class="text-amber-400 text-xs">★★★★½</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900">TP-Link Kasa Smart Power Strip — <span class="text-emerald-600">$35</span></h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">Six individually controllable smart outlets plus three USB ports. Control your entire entertainment center independently. Schedule to cut power overnight and eliminate $30–50/year in vampire power. One of the highest-ROI smart home purchases.</p>
+        <a href="https://www.amazon.com/s?k=TP-Link+Kasa+Smart+Power+Strip&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+      </div>
+
+      <!-- Product 14 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-gray-400">#14</span>
+          <span class="text-amber-400 text-xs">★★★★</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900">SwitchBot Door/Window Sensor — <span class="text-emerald-600">$16</span></h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">Know when any door or window opens. Get alerts, trigger automations (hallway light on when door opens), or log entry history. Great for security and parenting. Battery lasts 3+ years.</p>
+        <a href="https://www.amazon.com/s?k=SwitchBot+Door+Window+Sensor&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+      </div>
+
+      <!-- Product 15 -->
+      <div class="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-gray-400">#15</span>
+          <span class="text-amber-400 text-xs">★★★★</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900">Amazon Echo Flex / Smart Nightlight Plug — <span class="text-emerald-600">$15</span></h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed">A plug-in Alexa device with built-in nightlight and motion sensor. Plug it into a hallway outlet for voice control, a soft motion-activated nightlight, and automations. Three devices in one $15 plug.</p>
+        <a href="https://www.amazon.com/s?k=Amazon+Echo+Flex+Smart+Nightlight&tag=sirlim06-20" target="_blank" rel="noopener" class="mt-3 inline-flex items-center px-5 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 text-sm font-bold rounded-full transition">Check Price on Amazon →</a>
+      </div>
+
     </div>
-  </div>
 
-  <div class="product-box">
-    <h4>#8: Google Nest Mini (2nd Gen) — $30</h4>
-    <div class="price">$30</div>
-    <p>The Google ecosystem equivalent of the Echo Pop. If you're an Android user or prefer Google Assistant over Alexa, the Nest Mini is your starting point. Good sound, wall-mountable design, and full Google Home integration. Works with all Matter devices and thousands of Google-compatible products.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Google%20Nest%20Mini%20(2nd%20Gen)&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <!-- Starter Kits -->
+    <h2 id="starter-kits" class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-20 mb-8 scroll-mt-32">Best Budget Smart Home Starter Kits</h2>
+    <p class="text-gray-600 mb-8">Can't decide? Here are three pre-built shopping lists:</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      <!-- $50 -->
+      <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+        <div class="text-sm font-bold uppercase tracking-wider text-gray-400 mb-2">Starter</div>
+        <div class="text-3xl font-extrabold text-gray-900">$50</div>
+        <ul class="mt-4 space-y-2 text-sm text-gray-600">
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Echo Pop — $30</li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Kasa Smart Plug 4-pack — $20</li>
+        </ul>
+        <p class="mt-4 text-xs text-gray-500">Voice-control 4 devices from day one.</p>
+      </div>
+      <!-- $100 -->
+      <div class="bg-brand-50 rounded-2xl p-6 border-2 border-brand-200 relative">
+        <div class="absolute -top-3 left-4 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</div>
+        <div class="text-sm font-bold uppercase tracking-wider text-brand-600 mb-2">Essentials</div>
+        <div class="text-3xl font-extrabold text-gray-900">$102</div>
+        <ul class="mt-4 space-y-2 text-sm text-gray-600">
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Echo Pop — $30</li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Kasa Plug 4-pack — $20</li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Wyze Bulb 4-pack — $32</li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> SwitchBot Motion — $20</li>
+        </ul>
+        <p class="mt-4 text-xs text-gray-500">Voice + lights + motion automation.</p>
+      </div>
+      <!-- $200 -->
+      <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+        <div class="text-sm font-bold uppercase tracking-wider text-gray-400 mb-2">Complete</div>
+        <div class="text-3xl font-extrabold text-gray-900">$228</div>
+        <ul class="mt-4 space-y-2 text-sm text-gray-600">
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Echo Show 5 — $50</li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Kasa Plugs + Wyze Bulbs</li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Wyze Cam + Doorbell</li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Motion + Leak sensors</li>
+        </ul>
+        <p class="mt-4 text-xs text-gray-500">Full smart home for the price of one premium lock.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="product-box">
-    <h4>#9: IKEA TRÅDFRI Smart Bulb (3-pack) — $27</h4>
-    <div class="price">$27 ($9 per bulb)</div>
-    <p>Zigbee smart bulbs that work with the IKEA DIRIGERA hub, SmartThings, and any Zigbee-compatible hub. They also support Matter when used with the DIRIGERA hub. Slightly better build quality than Wyze bulbs and don't clog your Wi-Fi network (since they use Zigbee). If you have a hub or plan to get one, these are the budget lighting choice.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=DFRI%20Smart%20Bulb%20(3-pack)&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price at IKEA</a>
+    <!-- Tips -->
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-16 mb-6">Tips for Buying Budget Smart Home Devices</h2>
+    <div class="space-y-4 mb-12">
+      <div class="flex items-start gap-3">
+        <span class="text-emerald-500 mt-1 flex-shrink-0"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+        <p><strong>Wait for sales.</strong> Amazon devices drop 40–60% on Prime Day and Black Friday. Check our <a href="best-smart-home-deals.html" class="text-brand-600 hover:underline font-medium">deals page</a> before buying anything.</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="text-emerald-500 mt-1 flex-shrink-0"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+        <p><strong>Avoid no-name brands.</strong> Stick with Wyze, TP-Link/Kasa, SwitchBot, IKEA, Govee, and Amazon/Google/Apple for budget picks.</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="text-emerald-500 mt-1 flex-shrink-0"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+        <p><strong>Check for subscriptions.</strong> Every product on this list works without a subscription (or offers meaningful free tiers).</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="text-emerald-500 mt-1 flex-shrink-0"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></span>
+        <p><strong>Start with what annoys you.</strong> Solve one daily frustration first. The enthusiasm from fixing one thing drives the rest.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="product-box">
-    <h4>#10: SwitchBot Motion Sensor — $20</h4>
-    <div class="price">$20</div>
-    <p>A battery-powered motion sensor that triggers automations in the SwitchBot app, Alexa, or Google. Mount it in a hallway, bathroom, or closet to trigger lights automatically. Battery lasts 3+ years. The cheapest reliable motion sensor we've tested, and it's a gateway to the kind of automation that makes a smart home feel truly smart.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=SwitchBot%20Motion%20Sensor&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <!-- FAQ -->
+    <h2 id="faq" class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-16 mb-8 scroll-mt-32">Frequently Asked Questions</h2>
+
+    <div class="space-y-6 mb-16">
+      <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+        <summary class="cursor-pointer px-6 py-4 font-semibold text-gray-900 flex items-center justify-between hover:bg-gray-100 transition">
+          Are cheap smart home devices reliable?
+          <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The ones on this list, yes. We specifically tested every product for reliability over weeks of daily use. Wyze, Kasa, and SwitchBot have proven track records with millions of users. The key is sticking with established brands.</div>
+      </details>
+      <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+        <summary class="cursor-pointer px-6 py-4 font-semibold text-gray-900 flex items-center justify-between hover:bg-gray-100 transition">
+          Do budget devices work with Matter?
+          <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">Increasingly, yes. Kasa smart plugs received Matter firmware updates in 2025. IKEA TRÅDFRI bulbs work with Matter via the DIRIGERA hub. Most new budget devices launching in 2026 include Matter support.</div>
+      </details>
+      <details class="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+        <summary class="cursor-pointer px-6 py-4 font-semibold text-gray-900 flex items-center justify-between hover:bg-gray-100 transition">
+          What's the single best budget smart home purchase?
+          <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-4 text-sm text-gray-600 leading-relaxed">The Kasa Smart Plug 4-pack at $20 ($5 each). It makes any device smart, saves money by cutting vampire power, and works with every ecosystem. If you include devices that save money, the $50 Amazon Smart Thermostat pays for itself in months.</div>
+      </details>
     </div>
-  </div>
 
-  <div class="product-box">
-    <h4>#11: Govee Smart LED Light Strip (16ft) — $15</h4>
-    <div class="price">$15</div>
-    <p>16 feet of color-changing LED strip lights for $15. Stick them behind your TV for bias lighting, under kitchen cabinets for ambient light, or around your desk for a gaming setup. Wi-Fi controlled via the Govee app or Alexa/Google voice commands. 16 million colors, music sync mode, and scheduled scenes. Pure fun for very little money.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Govee%20Smart%20LED%20Light%20Strip%20(16ft)&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
+    <!-- Closing -->
+    <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 md:p-10 text-white mb-12">
+      <h2 class="text-2xl font-extrabold">Start Small, Think Big</h2>
+      <p class="mt-4 text-slate-300 leading-relaxed">Every smart home starts with a single device. Buy an Echo Pop and a pack of smart plugs. Live with them for a week. Once you experience the "why didn't I do this sooner" feeling — you'll know exactly what to add next.</p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <a href="smart-home-beginners-guide.html" class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-bold rounded-full hover:bg-gray-100 transition">Read the Beginner's Guide →</a>
+        <a href="best-smart-home-deals.html" class="inline-flex items-center justify-center px-6 py-3 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition">Browse Latest Deals</a>
+      </div>
     </div>
+
   </div>
+</main>
 
-  <div class="product-box">
-    <h4>#12: YoLink Water Leak Sensor — $15</h4>
-    <div class="price">$15 (requires YoLink Hub, $20)</div>
-    <p>Water damage is the most expensive home disaster that's also the most preventable. This tiny sensor sits under a sink, behind a toilet, or near the water heater and screams at your phone the instant it detects moisture. The YoLink sensor uses LoRa (long-range wireless) so it works even in basements and crawl spaces where Wi-Fi can't reach. Battery lasts 2–4 years.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=YoLink%20Water%20Leak%20Sensor&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-    </div>
-  </div>
-
-  <div class="product-box">
-    <h4>#13: TP-Link Kasa Smart Power Strip — $35</h4>
-    <div class="price">$35</div>
-    <p>Six individually controllable smart outlets plus three USB ports. Put your entire entertainment center — TV, soundbar, game console, streaming box, lamp — on one power strip and control each device independently. Schedule the whole strip to cut power overnight and eliminate $30–50/year in vampire power. One of the highest-ROI smart home purchases you can make.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=TP-Link%20Kasa%20Smart%20Power%20Strip&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-    </div>
-  </div>
-
-  <div class="product-box">
-    <h4>#14: SwitchBot Door/Window Sensor — $16</h4>
-    <div class="price">$16</div>
-    <p>Know when any door or window opens. Get alerts on your phone, trigger automations (turn on the hallway light when the front door opens), or just log entry history. Useful for security, for parents who want to know when the kids come home, and for automations that react to door state. Battery lasts 3+ years.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=SwitchBot%20Door%2FWindow%20Sensor&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-    </div>
-  </div>
-
-  <div class="product-box">
-    <h4>#15: Amazon Echo Flex / Smart Nightlight Plug — $15</h4>
-    <div class="price">$15</div>
-    <p>A plug-in Alexa device with a built-in nightlight and motion sensor. Plug it into a hallway outlet and it gives you Alexa voice control, a soft nightlight that activates on motion, and can trigger automations when it detects movement. It's a motion sensor, nightlight, and Alexa speaker in one $15 plug. Perfect for hallways and bathrooms.</p>
-    <div class="cta-box">
-      <a href="https://www.amazon.com/s?k=Amazon%20Echo%20Flex%20%2F%20Smart%20Nightlight%20Plug&tag=sirlim06-20" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-affiliate="TODO">Check Price on Amazon</a>
-    </div>
-  </div>
-
-  <h2>Best Budget Smart Home Starter Kits</h2>
-  <p>Can't decide? Here are three pre-built shopping lists at different price points:</p>
-
-  <h3>The $50 Starter</h3>
-  <ul>
-    <li>Echo Pop: $30</li>
-    <li>Kasa Smart Plug 4-pack: $20</li>
-    <li><strong>Total: $50</strong></li>
-  </ul>
-  <p>Voice-control 4 devices from day one. Add bulbs and sensors later.</p>
-
-  <h3>The $100 Essentials Kit</h3>
-  <ul>
-    <li>Echo Pop: $30</li>
-    <li>Kasa Smart Plug 4-pack: $20</li>
-    <li>Wyze Bulb 4-pack: $32</li>
-    <li>SwitchBot Motion Sensor: $20</li>
-    <li><strong>Total: $102</strong></li>
-  </ul>
-  <p>Voice and scheduled lights, smart plugs for any device, and motion-activated automations.</p>
-
-  <h3>The $200 Complete Budget Home</h3>
-  <ul>
-    <li>Echo Show 5: $50</li>
-    <li>Kasa Smart Plug 4-pack: $20</li>
-    <li>Wyze Bulb 4-pack: $32</li>
-    <li>Wyze Cam v4: $36</li>
-    <li>Wyze Video Doorbell: $35</li>
-    <li>SwitchBot Motion Sensor: $20</li>
-    <li>YoLink Leak Sensor + Hub: $35</li>
-    <li><strong>Total: $228</strong></li>
-  </ul>
-  <p>Full smart home with display, cameras, doorbell, lighting, plugs, motion sensor, and leak detection — all for about the price of a single premium smart lock.</p>
-
-  <h2>Tips for Buying Budget Smart Home Devices</h2>
-  <ul>
-    <li><strong>Wait for sales.</strong> Amazon devices drop 40–60% on Prime Day and Black Friday. Wyze products go on sale monthly. Check our <a href="best-smart-home-deals.html">deals page</a> before buying anything.</li>
-    <li><strong>Avoid no-name brands.</strong> "Smart plug" products from brands you've never heard of often have terrible apps, no security updates, and die within a year. Stick with Wyze, TP-Link/Kasa, SwitchBot, IKEA, Govee, and Amazon/Google/Apple for budget picks.</li>
-    <li><strong>Check for subscriptions.</strong> Some budget cameras and doorbells are cheap upfront but require monthly subscriptions for basic features like cloud storage. Every product on this list works without a subscription (or offers meaningful free tiers).</li>
-    <li><strong>Start with what annoys you.</strong> Identify the one thing in your home that frustrates you daily — forgetting lights, no visibility at the front door, a freezing house when you wake up. Solve that first. The enthusiasm from fixing one thing will drive you to build out the rest.</li>
-  </ul>
-
-  <h2>Frequently Asked Questions</h2>
-
-  <div class="faq-item">
-    <h3>Are cheap smart home devices reliable?</h3>
-    <p>The ones on this list, yes. We specifically tested every product for reliability over weeks of daily use. Wyze, Kasa, and SwitchBot have proven track records with millions of users. The key is sticking with established brands rather than random Amazon marketplace sellers.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Do budget devices work with Matter?</h3>
-    <p>Increasingly, yes. Kasa smart plugs received Matter firmware updates in 2025. IKEA TRÅDFRI bulbs work with Matter via the DIRIGERA hub. Most new budget devices launching in 2026 include Matter support. It's becoming table stakes rather than a premium feature.</p>
-  </div>
-  <div class="faq-item">
-    <h3>What's the single best budget smart home purchase?</h3>
-    <p>The Kasa Smart Plug 4-pack at $20 ($5 each). It makes any device smart, saves money by cutting vampire power, and works with every ecosystem. If you include devices that save money, the $50 Amazon Smart Thermostat pays for itself in months.</p>
-  </div>
-
-  <h2>Start Small, Think Big</h2>
-  <p>Every smart home starts with a single device. You don't need to spend $1,000 on day one. Buy an Echo Pop and a pack of smart plugs. Live with them for a week. Once you experience the convenience — and the genuine "why didn't I do this sooner" feeling — you'll know exactly what to add next. The best smart home is built gradually, one affordable device at a time.</p>
-  <p>For more comprehensive advice, check out our <a href="smart-home-beginners-guide.html">Smart Home Beginner's Guide</a>, or browse the <a href="best-smart-home-deals.html">latest deals</a> to find these devices at even lower prices.</p>
-
-  <div class="newsletter">
-    <h2>Get Our Free Smart Home Planning Checklist</h2>
-    <p>Map out your setup before you buy. 20 devices ranked by value, plus our compatibility cheat sheet.</p>
-    <form class="newsletter-form" action="#" method="POST">
-      <input type="email" placeholder="Your email address" required aria-label="Email address">
-      <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+<!-- Newsletter -->
+<section class="py-16 bg-gradient-to-br from-brand-600 to-brand-800">
+  <div class="max-w-2xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-extrabold text-white">Get Our Free Smart Home Planning Checklist</h2>
+    <p class="mt-3 text-blue-100">Map out your setup before you buy. 20 devices ranked by value, plus our compatibility cheat sheet.</p>
+    <form class="mt-6 flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" action="#" method="POST">
+      <input type="email" placeholder="you@example.com" required aria-label="Email address" class="flex-1 px-5 py-4 rounded-full text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-white/30 shadow-lg">
+      <button type="submit" class="px-8 py-4 bg-white text-brand-700 font-bold rounded-full hover:bg-gray-50 transition shadow-lg">Send Me the Checklist</button>
     </form>
   </div>
-</article>
+</section>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div>
-      <h4>🏠 Smart Home Simplified</h4>
-      <p>Honest reviews and budget guides for smart home tech.</p>
-      <div class="affiliate-disclosure"><strong>Affiliate Disclosure:</strong> Some links on this site are affiliate links. We may earn a commission at no extra cost to you.</div>
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="md:col-span-2">
+        <a href="index.html" class="text-xl font-extrabold text-white">🏠 Smart Home Simplified</a>
+        <p class="mt-4 text-sm leading-relaxed max-w-md">Honest reviews and budget guides for smart home tech. We buy every product we recommend and test it ourselves.</p>
+        <div class="mt-6 p-4 bg-slate-800 rounded-xl text-xs leading-relaxed">
+          <strong class="text-slate-300">Affiliate Disclosure:</strong> Some links on this site are affiliate links. If you buy through our links, we may earn a small commission at no extra cost to you. We never let commissions influence our recommendations.
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Guides</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="best-smart-home-hubs-2026.html" class="hover:text-white transition">Smart Home Hubs</a></li>
+          <li><a href="best-security-cameras-under-100.html" class="hover:text-white transition">Security Cameras</a></li>
+          <li><a href="best-smart-thermostats.html" class="hover:text-white transition">Smart Thermostats</a></li>
+          <li><a href="best-robot-vacuums-2026.html" class="hover:text-white transition">Robot Vacuums</a></li>
+          <li><a href="best-smart-lighting-systems.html" class="hover:text-white transition">Smart Lighting</a></li>
+          <li><a href="best-video-doorbells.html" class="hover:text-white transition">Video Doorbells</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Resources</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="smart-home-beginners-guide.html" class="hover:text-white transition">Beginner's Guide</a></li>
+          <li><a href="best-smart-home-deals.html" class="hover:text-white transition">Today's Deals</a></li>
+          <li><a href="best-smart-speakers.html" class="hover:text-white transition">Smart Speakers</a></li>
+          <li><a href="best-smart-locks.html" class="hover:text-white transition">Smart Locks</a></li>
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h4>Guides</h4>
-      <ul>
-        <li><a href="best-smart-home-hubs-2026.html">Smart Home Hubs</a></li>
-        <li><a href="best-security-cameras-under-100.html">Security Cameras</a></li>
-        <li><a href="best-smart-thermostats.html">Smart Thermostats</a></li>
-        <li><a href="best-robot-vacuums.html">Robot Vacuums</a></li>
-        <li><a href="best-smart-lighting-systems.html">Smart Lighting</a></li>
-        <li><a href="best-video-doorbells.html">Video Doorbells</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="smart-home-beginners-guide.html">Beginner's Guide</a></li>
-        <li><a href="best-smart-home-deals.html">Today's Deals</a></li>
-        <li><a href="best-smart-speakers.html">Smart Speakers</a></li>
-        <li><a href="best-smart-locks.html">Smart Locks</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
+    <div class="mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+      <p>&copy; 2026 Smart Home Simplified. All rights reserved.</p>
     </div>
   </div>
-  <div class="footer-bottom"><p>&copy; 2026 Smart Home Simplified. All rights reserved.</p></div>
 </footer>
+
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
 
 </body>
 </html>
